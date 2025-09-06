@@ -1,0 +1,70 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fce4ec;
+    color: #4a5568;
+}
+
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.logo-text, .nav-link, h2 {
+    font-family: 'Great Vibes', 'Dancing Script', cursive;
+    transition: all 0.3s ease;
+}
+
+
+.logo-text {
+    font-size: 3.5rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+
+.nav-link:hover {
+    color: #d0629b;
+    transform: scale(1.1);
+}
+
+
+.navbar.scrolled .logo-text {
+    color: #602769;
+}
+
+.navbar.scrolled .nav-link {
+    color: #6b21a8;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+
+h2:hover {
+    color: #d34e93;
+    transform: scale(1.05);
+}
+
+.collection-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.highlight-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
