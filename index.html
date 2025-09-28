@@ -1,114 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery with Interactive Highlights</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArtMuse | Celebrating Artistic Heritage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-<!-- Navbar -->
-<nav id="main-nav" class="navbar fixed top-0 left-0 right-0 z-50 p-4 sm:p-6">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="logo-text text-white">The Gallery</a>
-        <div class="flex items-center space-x-6">
-            <a href="#about" class="nav-link text-white font-semibold">About</a>
-            <a href="#exhibitions" class="nav-link text-white font-semibold">Exhibitions</a>
-            <a href="#collections" class="nav-link text-white font-semibold">Collections</a>
-            <a href="#visit" class="nav-link text-white font-semibold">Visit</a>
-        </div>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">ArtMuse</div>
+    <span class="menu-toggle">☰</span>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#renaissance">Renaissance Revival</a></li>
+      <li><a href="#modern">Modern Expressions</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="content">
+      <h1>Celebrating Artistic Heritage</h1>
+      <p>Explore timeless masterpieces and inspiring exhibitions at ArtMuse.</p>
+      <a href="#about">Explore More</a>
     </div>
-</nav>
+  </header>
 
-<!-- Hero Section -->
-<header class="relative bg-gradient-to-r from-yellow-200 to-pink-300 h-screen flex flex-col justify-center items-center text-white text-center p-6">
-    <div class="relative z-10 max-w-4xl mx-auto">
-        <h1 class="text-5xl sm:text-6xl font-bold mb-4">Discover the World of Art</h1>
-        <p class="text-lg sm:text-xl font-light mb-8">Explore masterpieces from around the globe spanning centuries of human creativity.</p>
-        <a href="#exhibitions" class="bg-white text-pink-300 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-300">View Exhibitions</a>
+  <!-- About -->
+  <section id="about">
+    <h2>About the Museum</h2>
+    <div class="content-grid">
+      <p>
+        ArtMuse is dedicated to preserving and showcasing exceptional art from classic to contemporary eras, 
+        inspiring creativity and cultural appreciation in every visitor. 
+        Our galleries embrace both historic and modern masterpieces, offering a journey through time.
+      </p>
+      <img src="entrance.jpg" alt="Museum Interior">
     </div>
-</header>
+  </section>
 
-<!-- Main Content Sections -->
-<main class="container mx-auto py-16 px-4 space-y-16">
-
-<!-- About Section -->
-<section id="about" class="bg-white rounded-xl shadow-lg p-8 sm:p-12 mb-16 hover:bg-pink-50 transition duration-300">
-    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8">About the Museum</h2>
-    <div class="flex flex-col items-center">
-        <img src="interior.jpg" alt="Museum interior" class="w-full max-w-3xl rounded-lg shadow-md mb-6 highlight-img">
-        <p class="text-lg leading-relaxed mb-4">Established in 1950, our museum is a beacon of cultural heritage, housing a diverse collection of art from various epochs and regions.</p>
-        <p class="text-lg leading-relaxed">We are committed to preserving artistic legacies and making them accessible to everyone. Through curated exhibitions and educational programs, we connect the past, present, and future of art.</p>
+  <!-- Renaissance Revival -->
+  <section id="renaissance">
+    <h2>Renaissance Revival</h2>
+    <div class="content-grid">
+      <img src="renaissanceart.jpg" alt="Renaissance Art">
+      <p>
+        Step into the grandeur of Renaissance art with our curated collection of masterpieces. 
+        From intricate frescoes to timeless sculptures, this exhibit celebrates the rebirth of classical culture and human expression.
+      </p>
     </div>
-</section>
+  </section>
 
-<!-- Exhibitions Section -->
-<section id="exhibitions" class="bg-white rounded-xl shadow-lg p-8 sm:p-12 mb-16 hover:bg-yellow-50 transition duration-300">
-    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8">Current Exhibitions</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-50 rounded-lg p-6 text-center transition-transform transform hover:scale-105 duration-300 collection-card">
-            <img src="modernart.jpg" alt="Modern Art" class="w-full h-40 object-cover rounded-md mb-4">
-            <h3 class="text-xl font-semibold mb-2 hover:text-pink-500 transition duration-300">Modernism Defined</h3>
-            <p class="text-gray-600">A journey through the works of 20th-century masters.</p>
-        </div>
-        <div class="bg-gray-50 rounded-lg p-6 text-center transition-transform transform hover:scale-105 duration-300 collection-card">
-            <img src="renaissanceart.jpg" alt="Renaissance Art" class="w-full h-40 object-cover rounded-md mb-4">
-            <h3 class="text-xl font-semibold mb-2 hover:text-pink-500 transition duration-300">Echoes of the Renaissance</h3>
-            <p class="text-gray-600">An intimate look at the art that shaped an era.</p>
-        </div>
-        <div class="bg-gray-50 rounded-lg p-6 text-center transition-transform transform hover:scale-105 duration-300 collection-card">
-            <img src="sculpture.jpg" alt="Sculptures" class="w-full h-40 object-cover rounded-md mb-4">
-            <h3 class="text-xl font-semibold mb-2 hover:text-pink-500 transition duration-300">The Art of Form</h3>
-            <p class="text-gray-600">A stunning collection of contemporary sculptures.</p>
-        </div>
+  <!-- Modern Expressions -->
+  <section id="modern">
+    <h2>Modern Expressions</h2>
+    <div class="content-grid">
+      <p>
+        Explore the bold and innovative spirit of modern art. 
+        This collection highlights works that challenge conventions, 
+        embrace abstraction, and redefine artistic creativity for contemporary audiences.
+      </p>
+      <img src="modernart.jpg" alt="Modern Art Gallery">
     </div>
-</section>
+  </section>
 
-<!-- Collections Section -->
-<section id="collections" class="bg-white rounded-xl shadow-lg p-8 sm:p-12 mb-16 hover:bg-green-50 transition duration-300">
-    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8">Our Permanent Collections</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden collection-card">
-            <img src="classical.jpg" alt="Classical Antiquity" class="w-full h-40 object-cover">
-            <div class="p-4">
-                <h3 class="text-lg font-semibold mb-1 hover:text-pink-500 transition duration-300">Classical Antiquity</h3>
-                <p class="text-sm text-gray-600">Sculptures and pottery from ancient Greece and Rome.</p>
-            </div>
-        </div>
-        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden collection-card">
-            <img src="impression.jpg" alt="Impressionist Painting" class="w-full h-40 object-cover">
-            <div class="p-4">
-                <h3 class="text-lg font-semibold mb-1 hover:text-pink-500 transition duration-300">Impressionist Masters</h3>
-                <p class="text-sm text-gray-600">Iconic works from Monet, Renoir, and Degas.</p>
-            </div>
-        </div>
-        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden collection-card">
-            <img src="contemproray.jpg" alt="Contemporary Photography" class="w-full h-40 object-cover">
-            <div class="p-4">
-                <h3 class="text-lg font-semibold mb-1 hover:text-pink-500 transition duration-300">Contemporary Photography</h3>
-                <p class="text-sm text-gray-600">Groundbreaking works by modern photographers.</p>
-            </div>
-        </div>
+  <!-- Visit -->
+  <section id="visit">
+    <h2>Plan Your Visit</h2>
+    <div class="content-grid visit-grid">
+      <p>
+        From guided tours to family programs, find all you need to make your visit unique and memorable. We look forward to welcoming you to ArtMuse.
+      </p>
+      <img src="interior.jpg" alt="Museum Visit">
     </div>
-</section>
+  </section>
 
-<!-- Visit Section -->
-<section id="visit" class="bg-white rounded-xl shadow-lg p-8 sm:p-12 hover:bg-blue-50 transition duration-300">
-    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8">Plan Your Visit</h2>
-    <img src="entrance.jpg" alt="Museum entrance" class="w-full max-w-3xl mx-auto rounded-lg shadow-md highlight-img mb-6">
-    <p class="text-center text-lg max-w-2xl mx-auto">We invite you to explore the beauty and history within our walls. Check our website for hours, tickets, and guided tour information.</p>
-</section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries, partnerships, or group visits, please reach out. We’re excited to connect with art lovers worldwide.</p>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-gray-800 text-white text-center p-6 mt-16">
-    <p>&copy; 2024 The Gallery. All rights reserved.</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ArtMuse | Inspiring Creativity</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
